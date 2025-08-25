@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal portfolio of Soumya – developer, designer, and creator." />
+    <meta name="theme-color" content="#0ea5e9" />
+    <title>Soumya • Portfolio</title>
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Soumya • Portfolio" />
+    <meta property="og:description" content="Personal portfolio of Soumya – developer, designer, and creator." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="assets/og-image.svg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Soumya • Portfolio" />
+    <meta name="twitter:description" content="Personal portfolio of Soumya – developer, designer, and creator." />
+    <meta name="twitter:image" content="assets/og-image.svg" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Go to home">
+          <span class="brand-mark" aria-hidden="true">▨</span>
+          <span class="brand-text">Soumya</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+          <ul id="navMenu" class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="themeToggle" class="btn theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container grid-2">
+          <div class="hero-text">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1 class="gradient-text">Soumya</h1>
+            <p class="subtitle">I’m <span id="typing" class="typing"></span></p>
+            <div class="cta-row">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-ghost">Contact Me</a>
+              <a href="#" class="btn btn-ghost" download aria-label="Download CV (coming soon)">Download CV</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="avatar">
+              <img id="avatarImg" src="../WhatsApp Image 2025-02-21 at 16.55.44_5b975557.jpg" alt="Avatar" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I build fast, responsive, and user-friendly websites. I enjoy translating ideas into
+            clean, maintainable code and crafting delightful interactions.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="chip-list">
+            <li class="chip">HTML</li>
+            <li class="chip">CSS</li>
+            <li class="chip">JavaScript</li>
+            <li class="chip">Python</li>
+            <li class="chip">Node.js</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" class="section reveal">
+        <div class="container">
+          <h2>Services</h2>
+          <div class="services">
+            <article class="service">
+              <div class="service-icon">🧩</div>
+              <h3>Front End Developer</h3>
+              <p>Modern, responsive UI with semantic HTML, CSS, and JavaScript.</p>
+            </article>
+            <article class="service">
+              <div class="service-icon">🛠️</div>
+              <h3>Back End Developer</h3>
+              <p>Secure REST APIs, authentication, databases, and integrations.</p>
+            </article>
+            <article class="service">
+              <div class="service-icon">📊</div>
+              <h3>Data Scientist</h3>
+              <p>Data analysis, ML models, insights, and interactive dashboards.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="container">
+          <h2>Experience</h2>
+          <ol class="timeline"></ol>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+          </div>
+          <div class="cards" id="projectGrid">
+            
+
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Want to work together or have a question? Reach out:</p>
+          <ul class="contact-list">
+            <li><a href="mailto:soumyasaha205@gmail.com">soumyasaha205@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Soumya Saha. All rights reserved.</p>
+        <a href="#home" class="back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+  </html>
+
+
